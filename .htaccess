@@ -1,5 +1,5 @@
-ErrorDocument 403 /erreur_403.php
-ErrorDocument 404 /erreur_404.php
-ErrorDocument 500 /erreur_500.php
-ErrorDocument 503 /erreur_503.php
-DirectoryIndex index.php index.html erreur_403.php
+<IfModule mod_rewrite.c>
+   RewriteEngine on
+   RewriteRule    ^$ app/webroot/    [L]
+   RewriteRule    (.*) app/webroot/$1 [L]
+</IfModule>
