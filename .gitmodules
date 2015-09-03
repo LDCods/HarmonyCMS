@@ -1,0 +1,3 @@
+[submodule "harmonycms"]
+	path = harmonycms
+	url = git://https://github.com/LDCods/HarmonyCMS.git
